@@ -6,7 +6,7 @@ import SignIn from './SignIn';
 
 const Routes = () => (
   <BrowserRouter>
-    <div>
+    <div className="route">
       <nav>
         <Nav />
       </nav>
