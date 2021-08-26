@@ -1,9 +1,12 @@
 import React from 'react';
+import SignIn from './SignIn';
 
 
 const App = () => {
     return (
-        <div>Hello World</div>
+        <div>
+            <SignIn />
+        </div>
     )
 }
 
