@@ -6,10 +6,10 @@ const SignIn = () => {
             <div className="wrapper fadeInDown">
                 <div className="formContent">
                 <p><span className="material-icons logo">maps_ugc</span>health <span className="p-subtitle">Track</span></p>
-                <form className="form">
-                    <input type="text" id="login" className="fadeIn second" name="login" placeholder="username"></input>
-                    <input type="submit" className="fadeIn fourth" value="Log In"></input>
-                </form>
+                <div className="form">
+                    <input type="text" className="fadeIn second" name="login" placeholder="username"></input>
+                    <button type="button" className="fadeIn fourth">Log In</button>
+                </div>
                 </div>
             </div>
     ) 
