@@ -1,7 +1,6 @@
 .nav {
     display: flex;
     justify-content: space-between;
-    
 }
 
 .health-nav {
@@ -21,4 +20,5 @@
 .log-out {
     margin-top: 24px;
     color: white;
+    text-decoration: none;
 }
