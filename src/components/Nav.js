@@ -1,16 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../stylesheets/nav.css';
 
 const Nav = () => {
     return (
-        <div>
+        <div className="nav">
           <Link to="/">
-          <div className="health">
-                    <span className="material-icons logo">maps_ugc</span>
-                    <p>Health<span className="p-subtitle">Track</span></p>
+          <div className="health-nav">
+            <span className="material-icons logo-nav">maps_ugc</span>
+            <p>Health<span className="p-subtitle">Track</span></p>
           </div>
           </Link>
-          <Link to="/sign-in">Log Out</Link>
+          <Link to="/sign-in" className="log-out">Log Out</Link>
         </div>
     );
   }
