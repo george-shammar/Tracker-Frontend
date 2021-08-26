@@ -19,8 +19,12 @@ body {
 }
 
 .form {
-    padding-top: 60px;
+    padding-top: 30px;
     padding-bottom: 60px;
+}
+
+.sign-in {
+    color: #56baed;
 }
 
 .formContent {
@@ -162,9 +166,18 @@ body {
 }
 
 .logo{
-    font-size: 26pt;
-    padding: 0px 10px;
+    font-size: 30pt;
+    padding-top: 20px;
+    margin-top: 7px;
     color: red;
+}
+
+.health {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .p-subtitle{
