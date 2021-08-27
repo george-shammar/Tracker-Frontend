@@ -11,7 +11,7 @@ const Nav = () => {
             <p>Health<span className="p-subtitle">Track</span></p>
           </div>
           </Link>
-          <Link to="/" className="log-out"><i class="far fa-user"></i></Link>
+          <Link to="/" className="log-out"><i className="far fa-user"></i></Link>
         </div>
     );
   }
