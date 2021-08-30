@@ -1,5 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+// import App from './App';
 import '../stylesheets/SignIn.css';
+
+// const login = document.getElementsByClassName('fourth');
+// login.onclick = () => {
+    
+// };
   
 const SignIn = () => {
     return (
@@ -12,11 +19,10 @@ const SignIn = () => {
                 <h3 className="sign-in">Sign In</h3>
                 <div className="form">
                     <input type="text" className="fadeIn second" name="login" placeholder="username"></input>
-                    <button type="button" className="fadeIn fourth">Log In</button>
+                    <button type="button" className="fadeIn fourth"><Link to="/App">Log In</Link></button>
                 </div>
                 </div>
             </div>
-            
     ) 
 }
 
