@@ -1,7 +1,7 @@
 import React from 'react';
-import '../stylesheets/nav.css';
+import '../stylesheets/header.css';
 
-const Nav = () => {
+const Header = () => {
     return (
         <div className="nav">
           <div className="health-nav">
@@ -12,4 +12,4 @@ const Nav = () => {
     );
   }
   
-  export default Nav;
+  export default Header;
