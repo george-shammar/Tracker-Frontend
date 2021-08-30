@@ -1,6 +1,6 @@
 import React from 'react';
 import '../stylesheets/SignIn.css';
-
+  
 const SignIn = () => {
     return (
             <div className="wrapper fadeInDown">
@@ -16,6 +16,7 @@ const SignIn = () => {
                 </div>
                 </div>
             </div>
+            
     ) 
 }
 
