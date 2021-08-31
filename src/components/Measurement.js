@@ -11,8 +11,8 @@ const Measurement = () => {
             <div className="wrapper fadeInDown">
                 <div className="formContent">
                 <div className="form">
-                    <input type="text" className="fadeIn second" name="login" placeholder="Blood Pressure"></input>
-                    <input type="text" className="fadeIn second" name="login" placeholder="Blood Sugar"></input>
+                    <input type="number" className="fadeIn second" name="login" placeholder="Blood Pressure"></input>
+                    <input type="number" className="fadeIn second" name="login" placeholder="Blood Sugar"></input>
                     <button type="button" className="fadeIn fourth">Submit</button>
                 </div>
                 </div>

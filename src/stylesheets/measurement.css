@@ -6,24 +6,14 @@
     width: 100%;
     padding: 20px;
     height: 100vh;
-    background-color: #56baed;
-  }
-  
-  .form {
-      padding-top: 30px;
-      padding-bottom: 60px;
-  }
-  
-  .sign-in {
-      color: #56baed;
+    background-color: whitesmoke;
   }
   
   .formContent {
     -webkit-border-radius: 10px 10px 10px 10px;
     border-radius: 10px 10px 10px 10px;
     background: #fff;
-    padding: 30px;
-    width: 90%;
+    width: 100%;
     max-width: 450px;
     position: relative;
     padding: 0px;
