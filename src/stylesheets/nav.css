@@ -2,8 +2,8 @@
     display: flex;
     width: 100%;
     background-color: rgb(88, 86, 86);
-    justify-content: space-between;
     align-content: center;
+    justify-content: center;
 }
 
 .white {
@@ -14,6 +14,24 @@
     font-size: 0.8rem;
 }
 
-.center {
-    text-align: right;
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+.foot {
+    cursor: pointer;
+    width: 33%;
+}
+
+.foot:hover {
+    background-color: #56baed;
+}
+
+.left {
+    padding-left: 2%;
+}
+
+.right {
+    padding-right: 2%;
 }

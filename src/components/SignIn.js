@@ -1,12 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import App from './App';
 import '../stylesheets/SignIn.css';
-
-// const login = document.getElementsByClassName('fourth');
-// login.onclick = () => {
-    
-// };
   
 const SignIn = () => {
     return (
