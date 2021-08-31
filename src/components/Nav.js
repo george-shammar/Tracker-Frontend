@@ -11,7 +11,7 @@ const Nav = () => {
           </div>
           <div className="foot">
             <i className="far fa-chart-bar white center"></i>
-            <p className="white font">Add metrics</p>
+            <p ><Link to="/Measurement" className="white font">Add metrics</Link></p>
           </div>
           <div className="foot right">
             <i className="far fa-user white"></i>
