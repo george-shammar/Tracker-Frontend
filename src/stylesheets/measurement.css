@@ -1,9 +1,4 @@
-body {
-    font-family: "Poppins", sans-serif;
-    height: 100vh;
-  }
-  
-  .wrapper {
+.wrapper {
     display: flex;
     align-items: center;
     flex-direction: column; 
