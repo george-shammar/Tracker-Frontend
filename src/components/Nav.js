@@ -7,7 +7,7 @@ const Nav = () => {
         <div className="footer-nav">
           <div className="foot left">
             <i className="fas fa-chart-line white"></i>
-            <p className="white font">Healthtrack</p>
+            <p><Link to="/App" className="white font">Healthtrack</Link></p>
           </div>
           <div className="foot">
             <i className="far fa-chart-bar white center"></i>
