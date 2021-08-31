@@ -86,9 +86,7 @@
   .second:placeholder {
     color: #cccccc;
   }
-  
-  
-  
+
   /* ANIMATIONS */
   
   /* Simple CSS3 Fade-in-down Animation */
@@ -145,24 +143,6 @@
     -webkit-animation-duration:1s;
     -moz-animation-duration:1s;
     animation-duration:1s;
-  }
-  
-  .logo {
-      font-size: 15pt;
-      padding-top: 12px;
-      color: red;
-  }
-  
-  .health {
-      display: flex;
-      width: 100%;
-      justify-content: center;
-      font-size: 15px;
-      font-weight: bold;
-  }
-  
-  .p-subtitle{
-      color: #5352ed;
   }
   
   .fadeIn.second {

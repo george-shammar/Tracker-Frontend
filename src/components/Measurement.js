@@ -7,8 +7,8 @@ const Measurement = () => {
     return (
         <div>
             <Header />
-            <p>Tracker</p>
             <div className="wrapper fadeInDown">
+            <p>Record your health metrics</p>
                 <div className="formContent">
                 <div className="form">
                     <input type="number" className="fadeIn second" name="login" placeholder="Blood Pressure"></input>
