@@ -1,12 +1,27 @@
 .heart-img {
-    width: 10%;
+    width: 15%;
+}
+
+.home {
+    background-color: rgb(240, 235, 235);
 }
 
 .add-metrics {
     display: flex;
     width: 100%;
+    justify-content: space-between;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 2%;
 }
 
 .heart {
-    width: 50%;
+    width: 48.5%;
+    background-color: white;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+.heart:hover {
+    background-color: cornsilk;
 }

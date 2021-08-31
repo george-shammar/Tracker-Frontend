@@ -5,16 +5,14 @@ const bloodPressure = 'https://media.istockphoto.com/vectors/anatomical-heart-is
 
 const Home = () => {
     return (
-        <div>
+        <div className="home">
             <p>Add Metrics</p>
             <div className="add-metrics">
                 <div className="heart">
-                    <img className="heart-img" src={bloodPressure} />
-                    <p>Blood Pressure</p>
+                    <p><img className="heart-img" src={bloodPressure} />Blood Pressure</p>
                 </div>
                 <div  className="heart">
-                <img className="heart-img" src={bloodSugar} />
-                <p>Blood Glucose</p>
+                    <p><img className="heart-img" src={bloodSugar} />Blood Glucose</p>
                 </div>
             </div>
         </div>
