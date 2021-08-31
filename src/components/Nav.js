@@ -5,15 +5,16 @@ const Nav = () => {
     return (
         <div className="footer-nav">
           <div>
-            <i class="fas fa-chart-line"></i>
-            <p>Healthtrack</p>
+            <i className="fas fa-chart-line white"></i>
+            <p className="white font">Healthtrack</p>
           </div>
           <div>
-            <i class="far fa-chart-bar"></i>
-            <p>Add metrics</p>
+            <i className="far fa-chart-bar white center"></i>
+            <p className="white font">Add metrics</p>
           </div>
           <div>
-            <i className="far fa-user"></i>
+            <i className="far fa-user white"></i>
+            <p className="white font">Log Out</p>
           </div>
         </div>
     );

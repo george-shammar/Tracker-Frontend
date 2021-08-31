@@ -1,0 +1,19 @@
+.footer-nav {
+    display: flex;
+    width: 100%;
+    background-color: rgb(88, 86, 86);
+    justify-content: space-between;
+    align-content: center;
+}
+
+.white {
+    color: white;
+}
+
+.font {
+    font-size: 0.8rem;
+}
+
+.center {
+    text-align: right;
+}
