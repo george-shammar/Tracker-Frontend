@@ -1,8 +1,9 @@
 import React, { useState }from 'react';
 import { useDispatch } from 'react-redux';
 import { newUser } from '../action/index';
+// import {Redirect} from 'react-router-dom';
 // import { Link } from 'react-router-dom';
-// import App from './App';
+import App from './App';
 import '../stylesheets/SignIn.css';
   
 const SignIn = () => {
@@ -19,10 +20,10 @@ const SignIn = () => {
         dispatch(newUser(user));
         setUsername('');
         e.preventDefault();
+        // return  <Redirect  to="/App" />
         // <Link to="/App"></Link>
-        history.push("/App");
     };
-   
+  
     return (
     <div className="wrapper fadeInDown">
         <div className="formContent">
@@ -33,7 +34,7 @@ const SignIn = () => {
         <h3 className="sign-in">Sign In</h3>
             <form onSubmit={handleSubmit}>
                 <input type="text" className="fadeIn second" name="login" placeholder="username" value={username} onChange={changeUsername} required />
-                <button className="fadeIn fourth" type="submit" name="button">Log In</button>
+                <button className="fadeIn fourth" type="submit" name="button" >Log In</button>
             </form>
           
       </div>
