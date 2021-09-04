@@ -12,7 +12,14 @@ const SignIn = () => {
         const data = e.target.value;
         setUsername(data);
     };
-    
+
+    const handleSubmit = (e) => {
+        const user = { username };
+        dispatch(newUser(user));
+        setUsername('');
+        e.preventDefault();
+    };
+
     return (
             <div className="wrapper fadeInDown">
                 <div className="formContent">
