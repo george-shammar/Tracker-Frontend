@@ -1,14 +1,13 @@
 import React, { useState }from 'react';
 import { useDispatch } from 'react-redux';
 import { newUser } from '../action/index';
-// import {Redirect} from 'react-router-dom';
-// import { Link } from 'react-router-dom';
-import App from './App';
+import { useHistory } from "react-router-dom";
 import '../stylesheets/SignIn.css';
   
 const SignIn = () => {
     const [username, setUsername] = useState('');
     const dispatch = useDispatch();
+    const history = useHistory();
 
     const changeUsername = (e) => {
         const data = e.target.value;
@@ -20,8 +19,7 @@ const SignIn = () => {
         dispatch(newUser(user));
         setUsername('');
         e.preventDefault();
-        // return  <Redirect  to="/App" />
-        // <Link to="/App"></Link>
+        history.push("/App");
     };
   
     return (
