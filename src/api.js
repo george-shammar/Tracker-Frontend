@@ -8,7 +8,9 @@ const createUser = async (username) => {
                   Accept: 'application/json' },
         body: JSON.stringify(username),
       });
+      
       return response.json();
+      
     } catch (error) {
       return error.message;
     }

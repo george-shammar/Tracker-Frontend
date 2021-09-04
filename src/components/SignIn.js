@@ -18,22 +18,24 @@ const SignIn = () => {
         dispatch(newUser(user));
         setUsername('');
         e.preventDefault();
+        console.log("it works");
     };
-
+   
     return (
-            <div className="wrapper fadeInDown">
-                <div className="formContent">
-                <div className="health">
-                    <span className="material-icons logo">maps_ugc</span>
-                    <p>Health<span className="p-subtitle">Track</span></p>
-                </div>
-                <h3 className="sign-in">Sign In</h3>
-                <form className="form" onSubmit={handleSubmit}>
-                    <input type="text" className="fadeIn second" name="login" placeholder="username" value={username} onChange={changeUsername} required />
-                    <button type="button" className="fadeIn fourth"><Link to="/App">Log In</Link></button>
-                </form>
-                </div>
-            </div>
+    <div className="wrapper fadeInDown">
+        <div className="formContent">
+        <div className="health">
+            <span className="material-icons logo">maps_ugc</span>
+            <p>Health<span className="p-subtitle">Track</span></p>
+        </div>
+        <h3 className="sign-in">Sign In</h3>
+            <form onSubmit={handleSubmit}>
+                <input type="text" className="fadeIn second" name="login" placeholder="username" value={username} onChange={changeUsername} required />
+                <button className="fadeIn fourth" type="submit" name="button">Log In</button>
+            </form>
+            {/* <Link to="/App"></Link> */}
+      </div>
+    </div>
     ) 
 }
 
