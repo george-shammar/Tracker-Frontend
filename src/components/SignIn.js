@@ -29,7 +29,7 @@ const SignIn = () => {
                 </div>
                 <h3 className="sign-in">Sign In</h3>
                 <form className="form" onSubmit={handleSubmit}>
-                    <input type="text" className="fadeIn second" name="login" placeholder="username"></input>
+                    <input type="text" className="fadeIn second" name="login" placeholder="username" value={username} onChange={changeUsername} required />
                     <button type="button" className="fadeIn fourth"><Link to="/App">Log In</Link></button>
                 </form>
                 </div>
