@@ -6,6 +6,13 @@ import '../stylesheets/SignIn.css';
   
 const SignIn = () => {
     const [username, setUsername] = useState('');
+    const dispatch = useDispatch();
+
+    const changeUsername = (e) => {
+        const data = e.target.value;
+        setUsername(data);
+    };
+    
     return (
             <div className="wrapper fadeInDown">
                 <div className="formContent">
