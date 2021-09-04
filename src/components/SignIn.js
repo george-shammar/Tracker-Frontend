@@ -2,6 +2,7 @@ import React, { useState }from 'react';
 import { useDispatch } from 'react-redux';
 import { newUser } from '../action/index';
 // import { Link } from 'react-router-dom';
+// import App from './App';
 import '../stylesheets/SignIn.css';
   
 const SignIn = () => {
@@ -12,12 +13,14 @@ const SignIn = () => {
         const data = e.target.value;
         setUsername(data);
     };
-
+    
     const handleSubmit = (e) => {
         const user = { username };
         dispatch(newUser(user));
         setUsername('');
         e.preventDefault();
+        // <Link to="/App"></Link>
+        history.push("/App");
     };
    
     return (
@@ -32,7 +35,7 @@ const SignIn = () => {
                 <input type="text" className="fadeIn second" name="login" placeholder="username" value={username} onChange={changeUsername} required />
                 <button className="fadeIn fourth" type="submit" name="button">Log In</button>
             </form>
-            {/* <Link to="/App"></Link> */}
+          
       </div>
     </div>
     ) 
