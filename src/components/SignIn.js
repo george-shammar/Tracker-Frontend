@@ -28,10 +28,10 @@ const SignIn = () => {
                     <p>Health<span className="p-subtitle">Track</span></p>
                 </div>
                 <h3 className="sign-in">Sign In</h3>
-                <div className="form">
+                <form className="form" onSubmit={handleSubmit}>
                     <input type="text" className="fadeIn second" name="login" placeholder="username"></input>
                     <button type="button" className="fadeIn fourth"><Link to="/App">Log In</Link></button>
-                </div>
+                </form>
                 </div>
             </div>
     ) 
