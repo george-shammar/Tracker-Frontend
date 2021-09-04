@@ -2,6 +2,7 @@ import 'regenerator-runtime/runtime';
 
 const createUser = async (username) => {
     try {
+      console.log("it works");
       const response = await fetch(`https://fierce-garden-46227.herokuapp.com/api/users/`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json',

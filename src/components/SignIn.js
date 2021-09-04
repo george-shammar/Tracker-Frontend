@@ -1,7 +1,7 @@
 import React, { useState }from 'react';
 import { useDispatch } from 'react-redux';
 import { newUser } from '../action/index';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import '../stylesheets/SignIn.css';
   
 const SignIn = () => {
@@ -18,7 +18,6 @@ const SignIn = () => {
         dispatch(newUser(user));
         setUsername('');
         e.preventDefault();
-        console.log("it works");
     };
    
     return (
