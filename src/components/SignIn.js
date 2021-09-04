@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState }from 'react';
+import { useDispatch } from 'react-redux';
+import { newUser } from '../action/index';
 import { Link } from 'react-router-dom';
 import '../stylesheets/SignIn.css';
   
 const SignIn = () => {
+    const [username, setUsername] = useState('');
     return (
             <div className="wrapper fadeInDown">
                 <div className="formContent">
