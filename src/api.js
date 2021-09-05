@@ -32,6 +32,23 @@ const createTracker = async (blood_pressure, blood_glucose, id) => {
   }
 };
 
+const fetchUser = async () => {
+  const user = User.where(username="Glinda Pfeffer");
+  const id = user.ids;
+  console.log(id);
+  try {
+    const response = await fetch(`https://fierce-garden-46227.herokuapp.com/api/users/${id}`, {
+      method: 'GET',
+      headers: { 'Content-Type': 'application/json',
+                Accept: 'application/json' },
+      body: JSON.stringify(username),
+    });
+    
+    return response.json();
+    
+  } catch (error) {
+    return error.message;
+  }
+} 
 
-
-export { createUser, createTracker };
+export { createUser, createTracker, fetchUser };
