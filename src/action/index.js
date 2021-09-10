@@ -10,4 +10,4 @@ const getUserTrackers = async (userId) => {
     dispatch({ type: 'measurements/getUserTrackers', payload});
 }
 
-export { newUser };
+export { newUser, getUserTrackers };
