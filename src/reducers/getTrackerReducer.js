@@ -8,3 +8,5 @@ const getTrackerReducer = (trackers = initialState, action) => {
       return trackers;
     }
 };
+
+export default getTrackerReducer;

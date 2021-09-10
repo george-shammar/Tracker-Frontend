@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux';
 import signInReducer from './SignInReducer';
-import trackerReducer from './trackerReducer';
+import getTrackerReducer from './getTrackerReducer';
 
 const reducers = {
   username: signInReducer,
-  measurement: trackerReducer
+  trackers: getTrackerReducer
 };
 
 const rootReducer = combineReducers(reducers);
