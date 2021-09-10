@@ -16,9 +16,9 @@ const createUser = async (username) => {
     }
 };
 
-const fetchUser = async (id) => {
+const fetchUser = async (userId) => {
   try {
-    const response = await fetch(`https://fierce-garden-46227.herokuapp.com/api/users/${id}`, {
+    const response = await fetch(`https://fierce-garden-46227.herokuapp.com/api/users/${userId}`, {
       method: 'GET',
       headers: { 'Content-Type': 'application/json',
                 Accept: 'application/json' },
