@@ -2,11 +2,9 @@ import React, { useState }from 'react';
 import { useDispatch } from 'react-redux';
 import { newUser } from '../action/index';
 import { useHistory } from "react-router-dom";
-import { fetchUser } from '../api';
 import '../stylesheets/SignIn.css';
   
 const SignIn = () => {
-    fetchUser();
     const [username, setUsername] = useState('');
     const dispatch = useDispatch();
     const history = useHistory();
