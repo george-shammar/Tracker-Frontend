@@ -5,7 +5,7 @@ const newUser = (username) => async (dispatch) => {
     dispatch({ type: 'signIn/newUser', payload });
 };
 
-const getUserTrackers = async (userId) => {
+const getUserTrackers = (userId) => async (dispatch) => {
     const payload = await fetchUser(userId);
     dispatch({ type: 'measurements/getUserTrackers', payload});
 }
