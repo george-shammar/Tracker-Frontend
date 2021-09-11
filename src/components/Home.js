@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { fetchUser } from '../action/index';
 import { Link } from 'react-router-dom';
 import '../stylesheets/home.css';
 const bloodSugar = 'https://st.depositphotos.com/1008836/1993/i/950/depositphotos_19931429-stock-photo-glass-blood-drop-isolated.jpg'
