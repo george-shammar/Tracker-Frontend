@@ -4,14 +4,6 @@
     margin-bottom: 40px;
 }
 
-.search-icon {
-    opacity: 0.5;
-    position: absolute;
-    top: 45px;
-    left: 53px;
-    height: 20px;
-}
-
 #search::placeholder {
     font-size: 14px;
     font-weight: bold;
@@ -20,8 +12,8 @@
 
 .search-clear-button {
     position: absolute;
-    right: 42px;
-    top: 36px;
+    left: 170px;
+    top: 8px;
     bottom: 3px;
     border: 0;
     background: none;
@@ -36,5 +28,5 @@
 }
 
 .clear {
-    height: 20px;
+    height: 15px;
 }

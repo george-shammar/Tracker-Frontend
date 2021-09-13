@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import { selectSearchTerm } from '../reducers/filter';
 import '../stylesheets/Search.css';
 
-const searchIcon = 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/768px-Search_Icon.svg.png';
 const clearIcon = 'https://cdn.iconscout.com/icon/premium/png-512-thumb/clear-16-216586.png';
 
 const SearchTerm = ({ onSearch, onClear }) => {
@@ -12,7 +11,6 @@ const SearchTerm = ({ onSearch, onClear }) => {
 
   return (
     <div className="search-container">
-      <img className="search-icon" alt="" src={searchIcon} />
       <input
         id="search"
         type="text"
