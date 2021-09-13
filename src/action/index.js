@@ -5,9 +5,14 @@ const newUser = (username) => async (dispatch) => {
     dispatch({ type: 'signIn/newUser', payload });
 };
 
-const getTrackers = () => async (dispatch) => {
+const loadData = () => async (dispatch) => {
     const payload = await fetchTrackers();
-    dispatch({ type: 'measurements/getTrackers', payload});
+    dispatch({ type: 'allTrackers/loadData', payload});
 }
 
-export { newUser, getTrackers };
+const setSearchTerm = (term) => ({
+    type: 'searchTerm/setSearchTerm',
+    payload: term,
+});
+
+export { newUser, loadData };

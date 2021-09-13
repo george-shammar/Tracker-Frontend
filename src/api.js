@@ -24,7 +24,6 @@ const fetchTrackers = async () => {
                 Accept: 'application/json' },
       body: JSON.stringify(),
     });
-    console.log(response);
     return response.json();
     
   } catch (error) {
