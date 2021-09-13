@@ -16,15 +16,15 @@ const createUser = async (username) => {
     }
 };
 
-const fetchUser = async (userId) => {
+const fetchTracker = async () => {
   try {
-    const response = await fetch(`https://fierce-garden-46227.herokuapp.com/api/users/${userId}`, {
+    const response = await fetch('https://fierce-garden-46227.herokuapp.com/api/trackers/', {
       method: 'GET',
       headers: { 'Content-Type': 'application/json',
                 Accept: 'application/json' },
       body: JSON.stringify(),
     });
-    
+    console.log(response);
     return response.json();
     
   } catch (error) {
@@ -32,4 +32,4 @@ const fetchUser = async (userId) => {
   }
 } 
 
-export { createUser, fetchUser };
+export { createUser, fetchTracker };

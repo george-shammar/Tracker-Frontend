@@ -14,6 +14,7 @@ const SignIn = () => {
         setUsername(data);
     };
     
+   
     const handleSubmit = (e) => {
         const user = { username };
         dispatch(newUser(user));
