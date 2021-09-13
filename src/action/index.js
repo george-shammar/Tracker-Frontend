@@ -1,4 +1,5 @@
 import { createUser, fetchTrackers } from '../api';
+import { selectSearchTerm } from '../reducers/filter';
 
 const newUser = (username) => async (dispatch) => {
     const payload = await createUser(username);
