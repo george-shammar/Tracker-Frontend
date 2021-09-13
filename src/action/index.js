@@ -1,13 +1,13 @@
-import { createUser, fetchUser } from '../api';
+import { createUser, fetchTrackers } from '../api';
 
 const newUser = (username) => async (dispatch) => {
     const payload = await createUser(username);
     dispatch({ type: 'signIn/newUser', payload });
 };
 
-const getUserTrackers = (userId) => async (dispatch) => {
-    const payload = await fetchUser(userId);
-    dispatch({ type: 'measurements/getUserTrackers', payload});
+const getTrackers = () => async (dispatch) => {
+    const payload = await fetchTrackers();
+    dispatch({ type: 'measurements/getTrackers', payload});
 }
 
-export { newUser, getUserTrackers };
+export { newUser, getTrackers };

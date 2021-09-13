@@ -16,7 +16,7 @@ const createUser = async (username) => {
     }
 };
 
-const fetchTracker = async () => {
+const fetchTrackers = async () => {
   try {
     const response = await fetch('https://fierce-garden-46227.herokuapp.com/api/trackers/', {
       method: 'GET',
@@ -32,4 +32,4 @@ const fetchTracker = async () => {
   }
 } 
 
-export { createUser, fetchTracker };
+export { createUser, fetchTrackers };
