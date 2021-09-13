@@ -18,7 +18,7 @@ const SearchTerm = ({ onSearch, onClear }) => {
         type="text"
         value={searchTerm}
         onChange={onSearch}
-        placeholder="Filter Stocks"
+        placeholder="Patient's name"
       />
       {searchTerm.length > 0 && (
       <button
