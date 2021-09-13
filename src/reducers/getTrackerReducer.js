@@ -1,12 +1,12 @@
 const initialState = [];
 
-const getTrackerReducer = (trackers = initialState, action) => {
+const allTrackersReducer = (allTrackers = initialState, action) => {
     switch (action.type) {
-        case 'measurements/getTrackers':
+        case 'allTrackers/loadData':
           return action.payload;
         default:
-      return trackers;
+      return allTrackers;
     }
 };
 
-export default getTrackerReducer;
+export default allTrackersReducer;
