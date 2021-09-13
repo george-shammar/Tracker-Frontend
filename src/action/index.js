@@ -15,4 +15,18 @@ const setSearchTerm = (term) => ({
     payload: term,
 });
 
-export { newUser, loadData };
+const clearSearchTerm = () => ({
+    type: 'searchTerm/clearSearchTerm',
+});
+
+const selectAllTrackers = (state) => state.allTrackers;
+
+
+const selectFilteredAllTrackers = (state) => {
+    const allTrackers = selectAllTrackers(state);
+    const searchTerm = selectSearchTerm(state);
+  
+    return allTrackers.filter((user) => user.username.toLowerCase().includes(searchTerm.toLowerCase())); /* eslint-disable-line max-len */
+};
+
+export { newUser, loadData, setSearchTerm, clearSearchTerm, selectFilteredAllTrackers };
