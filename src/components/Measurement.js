@@ -37,11 +37,11 @@ const Measurement = () => {
             <div className="wrapper fadeInDown">
             <p>Record your health metrics</p>
                 <div className="formContent">
-                <div className="form">
+                <form className="form" onSubmit={handleSubmit}>
                     <input type="number" className="fadeIn second" name="login" placeholder="Blood Pressure"></input>
                     <input type="number" className="fadeIn second" name="login" placeholder="Blood Sugar"></input>
                     <button type="button" className="fadeIn fourth">Submit</button>
-                </div>
+                </form>
                 </div>
             </div>
             <Nav />
