@@ -15,9 +15,18 @@ const Measurement = () => {
         setBloodPressure(data);
     };
 
-    const recordBc = (e) => {
+    const recordBg = (e) => {
         const data = e.target.value;
         setBloodGlucose(data);
+    };
+
+    const handleSubmit = (e) => {
+        const blood_pressure = { blood_pressure };
+        const blood_glucose = { blood_glucose };
+        dispatch(newUser(user));
+        setUsername('');
+        e.preventDefault();
+        history.push("/App");
     };
 
     return (
