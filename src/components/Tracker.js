@@ -4,9 +4,14 @@ import '../stylesheets/tracker.css';
 const Tracker = ({tracker}) => {
     return (
         <div className="tracker">
-               <p>Blood Pressure: {tracker.blood_pressure}</p>
-               <p>Blood Glucose: {tracker.blood_glucose}</p>
-               <br />
+            <div className="card">
+               <p>Blood Pressure:</p>
+               <p>{tracker.blood_pressure}</p>
+            </div>
+            <div className="card">
+               <p>Blood Glucose:</p>
+               <p>{tracker.blood_glucose}</p>
+            </div>
         </div>
 
        
