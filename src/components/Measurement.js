@@ -38,8 +38,8 @@ const Measurement = () => {
             <p>Record your health metrics</p>
                 <div className="formContent">
                 <form className="form" onSubmit={handleSubmit}>
-                    <input type="number" className="fadeIn second" name="login" placeholder="Blood Pressure"></input>
-                    <input type="number" className="fadeIn second" name="login" placeholder="Blood Sugar"></input>
+                    <input type="number" className="fadeIn second" name="login" placeholder="Blood Pressure" value={blood_pressure}></input>
+                    <input type="number" className="fadeIn second" name="login" placeholder="Blood Sugar" value={blood_glucose}></input>
                     <button type="button" className="fadeIn fourth">Submit</button>
                 </form>
                 </div>
