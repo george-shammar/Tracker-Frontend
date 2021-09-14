@@ -3,10 +3,11 @@ import { useDispatch } from 'react-redux';
 import Header from './Header';
 import Nav from './Nav';
 import '../stylesheets/measurement.css';
+import { useHistory } from "react-router-dom";
 
 const Measurement = () => {
-    const [blood_pressure, setBloodPressure] = useState('');
-    const [blood_glucose, setBloodGlucose] = useState('');
+    const [blood_pressure, setBloodPressure] = useState();
+    const [blood_glucose, setBloodGlucose] = useState();
     const dispatch = useDispatch();
 
 
@@ -23,8 +24,9 @@ const Measurement = () => {
     const handleSubmit = (e) => {
         const blood_pressure = { blood_pressure };
         const blood_glucose = { blood_glucose };
-        dispatch(newUser(user));
-        setUsername('');
+        dispatch(newTracker(blood_pressure, blood_glucose));
+        setBloodPressure();
+        setBloodGlucose();
         e.preventDefault();
         history.push("/App");
     };
