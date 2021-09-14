@@ -1,4 +1,5 @@
 import React, { useState }from 'react';
+import { useDispatch } from 'react-redux';
 import Header from './Header';
 import Nav from './Nav';
 import '../stylesheets/measurement.css';
@@ -6,6 +7,13 @@ import '../stylesheets/measurement.css';
 const Measurement = () => {
     const [blood_pressure, setBloodPressure] = useState('');
     const [blood_glucose, setBloodGlucose] = useState('');
+    const dispatch = useDispatch();
+
+
+    const recordBp = (e) => {
+        const data = e.target.value;
+        setBloodPressure(data);
+    };
 
     return (
         <div>
