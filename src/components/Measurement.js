@@ -15,6 +15,11 @@ const Measurement = () => {
         setBloodPressure(data);
     };
 
+    const recordBc = (e) => {
+        const data = e.target.value;
+        setBloodGlucose(data);
+    };
+
     return (
         <div>
             <Header />
