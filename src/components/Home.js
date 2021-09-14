@@ -17,7 +17,7 @@ const Home = () => {
 
     useEffect(onFirstRender, []);
     
-    console.log(allTrackers);
+    console.log(allTrackers.data);
     return (
         <div className="home">
             <p>Add Metrics</p>
