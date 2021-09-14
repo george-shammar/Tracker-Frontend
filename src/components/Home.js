@@ -32,7 +32,7 @@ const Home = () => {
 
             <hr />
             <div>
-                <h5>Track your patient's health</h5>
+                <h5>Your health track</h5>
                 {allTrackers.data.length > 0 ? (
                   
                 <div>
