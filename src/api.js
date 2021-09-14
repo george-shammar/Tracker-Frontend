@@ -15,20 +15,18 @@ const createUser = async (username) => {
       return error.message;
     }
 };
-
 const fetchTrackers = async () => {
-  try {
-    const response = await fetch('https://fierce-garden-46227.herokuapp.com/api/trackers/', {
-      method: 'GET',
-      headers: { 'Content-Type': 'application/json',
-                Accept: 'application/json' },
-      body: JSON.stringify(),
-    });
-    return response.json();
+  const response = await fetch('https://fierce-garden-46227.herokuapp.com/api/trackers/');
+  return response.json();
+};
+// const fetchTrackers = async () => {
+//   try {
+//     const response = await fetch('https://fierce-garden-46227.herokuapp.com/api/trackers/');
+//     return response.json();
     
-  } catch (error) {
-    return error.message;
-  }
-} 
+//   } catch (error) {
+//     return error.message;
+//   }
+// } 
 
 export { createUser, fetchTrackers };
