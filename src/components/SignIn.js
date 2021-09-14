@@ -1,4 +1,4 @@
-import React, { useState }from 'react';
+import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { newUser } from '../action/index';
 import { useHistory } from "react-router-dom";

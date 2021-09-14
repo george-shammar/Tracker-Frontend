@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState }from 'react';
 import Header from './Header';
 import Nav from './Nav';
 import '../stylesheets/measurement.css';
 
 const Measurement = () => {
+    const [blood_pressure, setBloodPressure] = useState('');
+    const [blood_glucose, setBloodGlucose] = useState('');
+
     return (
         <div>
             <Header />
