@@ -1,16 +1,15 @@
 import React from 'react';
+import '../stylesheets/tracker.css';
 
-const Tracker = ({tracker, children}) => {
+const Tracker = ({tracker}) => {
     return (
-        <div>
-           <span>
+        <div className="tracker">
                <p>Blood Pressure: {tracker.blood_pressure}</p>
                <p>Blood Glucose: {tracker.blood_glucose}</p>
-               <p>Blood Glucose: {tracker.id}</p>
-              <p>user: {tracker.user.username}</p>
-           </span> 
-            
+               <br />
         </div>
+
+       
     )
 }
 

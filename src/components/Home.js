@@ -35,13 +35,13 @@ const Home = () => {
                 <h5>Track your patient's health</h5>
                 {allTrackers.data.length > 0 ? (
                   
-                <div className="metrics">
+                <div>
                    {allTrackers.data.map((tracker) => (
-                     <Tracker tracker={tracker} key={tracker.id}/>
-                     
+                     <Tracker tracker={tracker} key={tracker.id} />
                     ))}
          
                 </div>
+                
                 ) : (
                 <p> Loading data...</p>
               )} 
