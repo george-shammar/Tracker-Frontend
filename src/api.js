@@ -8,7 +8,6 @@ const createUser = async (username) => {
                   Accept: 'application/json' },
         body: JSON.stringify(username),
       });
-      
       return response.json();
       
     } catch (error) {
@@ -27,14 +26,15 @@ const fetchTrackers = async () => {
 }
 
 const createTracker = async (blood_pressure, blood_glucose, user_id) => {
+  
   try {
     const response = await fetch(`https://fierce-garden-46227.herokuapp.com/api/trackers/`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json',
                 Accept: 'application/json' },
-      body: JSON.stringify(username),
+      body: JSON.stringify(blood_pressure, blood_glucose, user_id),
     });
-    
+    console.log("called");
     return response.json();
     
   } catch (error) {

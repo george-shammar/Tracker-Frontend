@@ -3,34 +3,35 @@ import { useDispatch } from 'react-redux';
 import Header from './Header';
 import Nav from './Nav';
 import '../stylesheets/measurement.css';
-import { useHistory } from "react-router-dom";
+import { newTracker } from '../action/index';
 
 const Measurement = () => {
     const [blood_pressure, setBloodPressure] = useState();
     const [blood_glucose, setBloodGlucose] = useState();
+    const [tracker, setTracker] = useState({});
     const dispatch = useDispatch();
-
 
     const recordBp = (e) => {
         const data = e.target.value;
         setBloodPressure(data);
+        return data;
     };
 
     const recordBg = (e) => {
         const data = e.target.value;
         setBloodGlucose(data);
+        return data;
     };
 
     const handleSubmit = (e) => {
-        const blood_pressure = { blood_pressure };
-        const blood_glucose = { blood_glucose };
+        const bp = recordBp(e);
+        const bg = recordBg(e);
         const user_id = 1;
-        dispatch(newTracker(blood_pressure, blood_glucose, user_id));
-        setBloodPressure();
-        setBloodGlucose();
+        dispatch(newTracker(bp, bg, user_id));
+        setTracker({});
         e.preventDefault();
-        history.push("/App");
-    };
+        console.log("submit");
+    }
 
     return (
         <div>
@@ -38,10 +39,10 @@ const Measurement = () => {
             <div className="wrapper fadeInDown">
             <p>Record your health metrics</p>
                 <div className="formContent">
-                <form className="form" onSubmit={handleSubmit}>
+                <form className="form">
                     <input type="number" className="fadeIn second" name="login" placeholder="Blood Pressure" value={blood_pressure} onChange={recordBp}></input>
                     <input type="number" className="fadeIn second" name="login" placeholder="Blood Sugar" value={blood_glucose} onChange={recordBg}></input>
-                    <button type="button" className="fadeIn fourth">Submit</button>
+                    <button type="button" className="fadeIn fourth" onClick={handleSubmit}>Submit</button>
                 </form>
                 </div>
             </div>
