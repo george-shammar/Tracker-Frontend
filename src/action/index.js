@@ -6,7 +6,8 @@ const newUser = (username) => async (dispatch) => {
 };
 
 const newTracker = (blood_pressure, blood_glucose, user_id) => async (dispatch) => {
-    
+    const payload = await createTracker(blood_pressure, blood_glucose, user_id);
+    dispatch({ type: 'measurement/newTracker', payload });
 }
 
 const loadData = () => async (dispatch) => {
@@ -21,4 +22,4 @@ const selectFilteredTrackers = (state) => {
    return allTrackers;
 };
 
-export { newUser, loadData, selectFilteredTrackers };
+export { newUser, loadData, selectFilteredTrackers, newTracker };

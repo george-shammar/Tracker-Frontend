@@ -2,7 +2,7 @@ const initialState = {};
 
 const createTrackerReducer = (tracker = initialState, action) => {
     switch (action.type) {
-      case 'measurement/createTracker':
+      case 'measurement/newTracker':
         return action.payload;
       default:
         return tracker;
