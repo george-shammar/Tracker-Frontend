@@ -1,4 +1,21 @@
 import 'regenerator-runtime/runtime';
+import axios from "axios";
+
+const  createTracker = async (blood_pressure, blood_glucose, user_id) => {
+  const response = await axios.post(
+    'https://fierce-garden-46227.herokuapp.com/api/trackers/',
+    {
+        blood_pressure, 
+        blood_glucose, 
+        user_id
+    },
+    {
+      headers: { 'Content-Type': 'application/json',
+      Accept: 'application/json' },
+    }
+  );
+  return response;
+};
 
 const createUser = async (username) => {
     try {
@@ -25,21 +42,5 @@ const fetchTrackers = async () => {
   }
 }
 
-const createTracker = async (blood_pressure, blood_glucose, user_id) => {
-  
-  try {
-    const response = await fetch(`https://fierce-garden-46227.herokuapp.com/api/trackers/`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json',
-                Accept: 'application/json' },
-      body: JSON.stringify(blood_pressure, blood_glucose, user_id),
-    });
-    console.log("called");
-    return response.json();
-    
-  } catch (error) {
-    return error.message;
-  }
-};
 
 export { createUser, fetchTrackers, createTracker };

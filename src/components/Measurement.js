@@ -14,23 +14,20 @@ const Measurement = () => {
     const recordBp = (e) => {
         const data = e.target.value;
         setBloodPressure(data);
-        return data;
     };
 
     const recordBg = (e) => {
         const data = e.target.value;
         setBloodGlucose(data);
-        return data;
     };
 
     const handleSubmit = (e) => {
-        const bp = recordBp(e);
-        const bg = recordBg(e);
-        const user_id = 1;
-        dispatch(newTracker(bp, bg, user_id));
+        const bpp = document.getElementById('bp').value;
+        const bgg = document.getElementById('bg').value;
+        const user_id = 3;
+        dispatch(newTracker(bpp, bgg, user_id));
         setTracker({});
         e.preventDefault();
-        console.log("submit");
     }
 
     return (
@@ -40,8 +37,8 @@ const Measurement = () => {
             <p>Record your health metrics</p>
                 <div className="formContent">
                 <form className="form">
-                    <input type="number" className="fadeIn second" name="login" placeholder="Blood Pressure" value={blood_pressure} onChange={recordBp}></input>
-                    <input type="number" className="fadeIn second" name="login" placeholder="Blood Sugar" value={blood_glucose} onChange={recordBg}></input>
+                    <input type="number" id="bp" className="fadeIn second" name="login" placeholder="Blood Pressure" onChange={recordBp}></input>
+                    <input type="number" id="bg" className="fadeIn second" name="login" placeholder="Blood Sugar" onChange={recordBg}></input>
                     <button type="button" className="fadeIn fourth" onClick={handleSubmit}>Submit</button>
                 </form>
                 </div>
