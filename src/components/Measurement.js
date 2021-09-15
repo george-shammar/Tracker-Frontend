@@ -24,7 +24,8 @@ const Measurement = () => {
     const handleSubmit = (e) => {
         const blood_pressure = { blood_pressure };
         const blood_glucose = { blood_glucose };
-        dispatch(newTracker(blood_pressure, blood_glucose));
+        const user_id = 1;
+        dispatch(newTracker(blood_pressure, blood_glucose, user_id));
         setBloodPressure();
         setBloodGlucose();
         e.preventDefault();
