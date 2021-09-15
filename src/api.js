@@ -24,6 +24,22 @@ const fetchTrackers = async () => {
   } catch (error) {
     return error.message;
   }
-} 
+}
 
-export { createUser, fetchTrackers };
+const createTracker = async (blood_pressure, blood_glucose, user_id) => {
+  try {
+    const response = await fetch(`https://fierce-garden-46227.herokuapp.com/api/trackers/`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json',
+                Accept: 'application/json' },
+      body: JSON.stringify(username),
+    });
+    
+    return response.json();
+    
+  } catch (error) {
+    return error.message;
+  }
+};
+
+export { createUser, fetchTrackers, createTracker };
