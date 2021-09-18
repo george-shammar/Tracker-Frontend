@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the Nav component correctly 1`] = `
+<div
+  className="footer-nav"
+>
+  <div
+    className="foot left"
+  >
+    <i
+      className="fas fa-chart-line white"
+    />
+    <p>
+      <a
+        className="white font"
+        href="/App"
+        onClick={[Function]}
+      >
+        Healthtrack
+      </a>
+    </p>
+  </div>
+  <div
+    className="foot"
+  >
+    <i
+      className="far fa-chart-bar white center"
+    />
+    <p>
+      <a
+        className="white font"
+        href="/Measurement"
+        onClick={[Function]}
+      >
+        Add metrics
+      </a>
+    </p>
+  </div>
+  <div
+    className="foot right"
+  >
+    <i
+      className="far fa-user white"
+    />
+    <p>
+      <a
+        className="white font"
+        href="/"
+        onClick={[Function]}
+      >
+        Log Out
+      </a>
+    </p>
+  </div>
+</div>
+`;

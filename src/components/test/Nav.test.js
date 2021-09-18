@@ -15,4 +15,13 @@ it('renders Nav without crashing', () => {
     );
   
     ReactDom.unmountComponentAtNode(div);
-  });
+});
+
+it('renders the Nav component correctly', () => {
+    const tree = renderer.create(
+      <BrowserRouter>
+        <Nav />
+      </BrowserRouter>,
+    ).toJSON();
+    expect(tree).toMatchSnapshot();
+});
