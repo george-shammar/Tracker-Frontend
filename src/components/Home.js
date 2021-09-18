@@ -43,28 +43,20 @@ class Home extends React.Component {
         <hr />
         <div>
           <h5>Your health track</h5>
-          {tracker !== null && tracker.data.length > 0
-          && (
+          {tracker !== null && tracker.data.length > 0 ? (
+
             <div>
-                {tracker.data.map((tracker) => (
-                  <Tracker tracker={tracker} key={tracker.id} />
-                ))}
+              {tracker.data.map((tracker) => (
+                <Tracker tracker={tracker} key={tracker.id} />
+              ))}
+
             </div>
+
+          ) : (
+            <p> Loading data...</p>
           )}
-          {/* {allTrackers.data.length > 0 ? ( */}
-
-          {/* <div>
-            {allTrackers.data.map((tracker) => (
-              <Tracker tracker={tracker} key={tracker.id} />
-            ))}
-
-          </div> */}
-          {/*
-        ) : (
-          <p> Loading data...</p>
-        )} */}
+          ;
         </div>
-
       </div>
     );
   }
