@@ -1,15 +1,18 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
+import { useHistory } from 'react-router-dom';
 import Header from './Header';
 import Nav from './Nav';
 import '../stylesheets/measurement.css';
 import { newTracker } from '../action/index';
+
 /* eslint-disable */
 const Measurement = () => {
   const [blood_pressure, setBloodPressure] = useState();
   const [blood_glucose, setBloodGlucose] = useState();
   const [tracker, setTracker] = useState({});
   const dispatch = useDispatch();
+  const history = useHistory();
 
   const recordBp = (e) => {
     const data = e.target.value;
@@ -28,6 +31,7 @@ const Measurement = () => {
     dispatch(newTracker(bpp, bgg, user_id));
     setTracker({});
     e.preventDefault();
+    history.push('/App');
   };
 
   return (
