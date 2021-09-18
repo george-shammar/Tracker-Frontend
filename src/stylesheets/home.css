@@ -1,28 +1,28 @@
 .heart-img {
-    width: 15%;
-    margin-top: 10px;
+  width: 15%;
+  margin-top: 10px;
 }
 
 .home {
-    background-color: rgb(240, 235, 235);
+  background-color: rgb(240, 235, 235);
 }
 
 .add-metrics {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    padding-left: 1%;
-    padding-right: 1%;
-    padding-bottom: 2%;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-bottom: 2%;
 }
 
 .heart {
-    width: 48.5%;
-    background-color: white;
-    border-radius: 5%;
-    cursor: pointer;
+  width: 48.5%;
+  background-color: white;
+  border-radius: 5%;
+  cursor: pointer;
 }
 
 .heart:hover {
-    background-color: cornsilk;
+  background-color: cornsilk;
 }

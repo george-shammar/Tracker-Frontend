@@ -1,32 +1,32 @@
 .search-container {
-    padding: 33px 36px 0 36px;
-    position: relative;
-    margin-bottom: 40px;
+  padding: 33px 36px 0 36px;
+  position: relative;
+  margin-bottom: 40px;
 }
 
 #search::placeholder {
-    font-size: 14px;
-    font-weight: bold;
-    color: #8a8e9d;
+  font-size: 14px;
+  font-weight: bold;
+  color: #8a8e9d;
 }
 
 .search-clear-button {
-    position: absolute;
-    left: 170px;
-    top: 8px;
-    bottom: 3px;
-    border: 0;
-    background: none;
-    color: #141c3a;
-    margin: 0;
-    padding: 0 10px;
-    border-radius: 100px;
-    z-index: 2;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
+  position: absolute;
+  left: 170px;
+  top: 8px;
+  bottom: 3px;
+  border: 0;
+  background: none;
+  color: #141c3a;
+  margin: 0;
+  padding: 0 10px;
+  border-radius: 100px;
+  z-index: 2;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 .clear {
-    height: 15px;
+  height: 15px;
 }

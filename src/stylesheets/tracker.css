@@ -1,11 +1,11 @@
 .tracker {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .card {
-    width: 48.5%;
-    background-color: white;
-    height: 100px;
-    margin: 10px;
+  width: 48.5%;
+  background-color: white;
+  height: 100px;
+  margin: 10px;
 }
