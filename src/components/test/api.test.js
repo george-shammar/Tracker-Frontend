@@ -23,11 +23,17 @@
 
     describe('fetchTrackers', () => {
         it('should returned a defined response', async () => {
-            fetch.mockResponseOnce(JSON.stringify({ result: [track] 
-        }));
+            fetch.mockResponseOnce(JSON.stringify({ result: [track] }));
         const response = await fetchTrackers();
-            expect(response).toBeDefined();
+        expect(response).toBeDefined();
         });
+
+        it('should NOT return a Null response', async () => {
+            fetch.mockResponseOnce(JSON.stringify({ result: [track] }));
+            const response = await fetchTrackers();
+            expect(response).not.toBeNull();
+          });
+
     });
 
  })
