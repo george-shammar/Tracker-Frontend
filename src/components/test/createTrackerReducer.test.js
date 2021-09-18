@@ -12,3 +12,13 @@ test('should return the initial state with empty object', () => {
     user_id: 1,
     });
 });
+
+test('should return a defined initial state', () => {
+    expect(createTrackerReducer(undefined, {})).toBeDefined();
+});
+
+
+test('should return a truthy', () => {
+    expect(createTrackerReducer(undefined, {})).toBeTruthy();
+});
+  
