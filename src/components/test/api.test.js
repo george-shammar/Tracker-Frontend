@@ -1,9 +1,10 @@
 /**
  * @jest-environment jsdom
  */
+/* eslint-disable */
 
 import fetchMock from 'jest-fetch-mock';
-import { createUser, fetchTrackers, createTracker } from '../../api';
+import { fetchTrackers } from '../../api';
 
 describe('api', () => {
   fetchMock.enableMocks();
