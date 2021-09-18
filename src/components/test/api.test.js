@@ -70,6 +70,12 @@
             expect(typeof track.blood_pressure).toEqual('number');
         });
 
+        it('should NOT return a response with a name/user property that is another data type', async () => {
+            fetch.mockResponseOnce(JSON.stringify({ result: [track] }));
+            const response = await fetchTrackers();
+            expect(typeof track.user.username).not.toEqual([]);
+        });
+
     });
 
  })
