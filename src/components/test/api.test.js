@@ -81,7 +81,6 @@
             const response = await fetchTrackers();
             expect(typeof track.user.username).not.toEqual([]);
         });
-
     });
 
  })
