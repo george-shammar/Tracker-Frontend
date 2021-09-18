@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../stylesheets/tracker.css';
 
 const Tracker = ({ tracker }) => (
@@ -14,5 +15,9 @@ const Tracker = ({ tracker }) => (
   </div>
 
 );
+
+Tracker.propTypes = {
+  tracker: PropTypes.instanceOf(Object).isRequired,
+};
 
 export default Tracker;
