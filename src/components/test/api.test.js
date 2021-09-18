@@ -46,6 +46,12 @@
             expect(track.blood_pressure).not.toEqual(1000);
         });
 
+        it('should return a response with a blood_pressure/tracker type integer', async () => {
+            fetch.mockResponseOnce(JSON.stringify({ result: [track] }));
+            const response = await fetchTrackers();
+            expect(typeof track.blood_pressure).toEqual('number');
+        });
+
     });
 
  })
