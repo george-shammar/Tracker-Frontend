@@ -25,6 +25,13 @@ class Home extends React.Component {
 
     return (
       <div className="home">
+        <div className="circle">
+          <div>
+            <p className="percentage">52</p>
+            <p className="unit">mmHg</p>
+          </div>
+        </div>
+        <p className="completedText">Blood Pressure</p>
         <p>Add Metrics</p>
         <div className="add-metrics">
           <div className="heart">
