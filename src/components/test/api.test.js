@@ -11,17 +11,19 @@
         fetch.resetMocks();
     });
 
+    const track = { 
+        id: 1, 
+        blood_pressure: 76,
+        blood_glucose: 44,
+        user: {
+            id: 5,
+            username: "Ulysses Ritchie"
+        }            
+    }
+
     describe('fetchTrackers', () => {
         it('should returned a defined response', async () => {
-            fetch.mockResponseOnce(JSON.stringify({ result: [{ 
-                id: 1, 
-                blood_pressure: 76,
-                blood_glucose: 44,
-                user: {
-                    id: 5,
-                    username: "Ulysses Ritchie"
-                }            
-            }] 
+            fetch.mockResponseOnce(JSON.stringify({ result: [track] 
         }));
         const response = await fetchTrackers();
             expect(response).toBeDefined();
