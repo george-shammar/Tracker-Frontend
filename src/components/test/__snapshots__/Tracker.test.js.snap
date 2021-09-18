@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the Tracker component correctly 1`] = `
+<div
+  className="tracker"
+>
+  <div
+    className="card"
+  >
+    <p>
+      Blood Pressure:
+    </p>
+    <p>
+      1
+    </p>
+  </div>
+  <div
+    className="card"
+  >
+    <p>
+      Blood Glucose:
+    </p>
+    <p>
+      1
+    </p>
+  </div>
+</div>
+`;

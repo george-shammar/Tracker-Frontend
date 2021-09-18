@@ -23,3 +23,12 @@ it('renders Tracker without crashing', () => {
 
   ReactDom.unmountComponentAtNode(div);
 });
+
+it('renders the Tracker component correctly', () => {
+  const tree = renderer.create(
+    <BrowserRouter>
+       <Tracker tracker={tracker} key={tracker.id} />
+    </BrowserRouter>,
+  ).toJSON();
+  expect(tree).toMatchSnapshot();
+});
