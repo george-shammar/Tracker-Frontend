@@ -17,9 +17,9 @@ const loadData = () => async (dispatch) => {
 
 const selectAllTrackers = (state) => state.allTrackers;
 
-const selectFilteredTrackers = (state) => {
+const selectTrackers = (state) => {
     const allTrackers = selectAllTrackers(state);
    return allTrackers;
 };
 
-export { newUser, loadData, selectFilteredTrackers, newTracker };
+export { newUser, loadData, selectTrackers, newTracker };
