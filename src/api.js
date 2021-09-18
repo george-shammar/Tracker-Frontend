@@ -35,13 +35,13 @@ const createUser = async (username) => {
   }
 };
 
-const fetchTrackers = async () => {
-  try {
-    const response = await fetch('https://fierce-garden-46227.herokuapp.com/api/trackers/');
-    return response.json();
-  } catch (error) {
-    return error.message;
-  }
-};
+// const fetchTrackers = async () => {
+//   try {
+//     const response = await fetch('https://fierce-garden-46227.herokuapp.com/api/trackers/');
+//     return response.json();
+//   } catch (error) {
+//     return error.message;
+//   }
+// };
 
-export { createUser, fetchTrackers, createTracker };
+export { createUser, createTracker };

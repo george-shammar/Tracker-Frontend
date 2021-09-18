@@ -1,4 +1,4 @@
-import { createUser, fetchTrackers, createTracker } from '../api';
+import { createUser, createTracker } from '../api';
 
 const newUser = (username) => async (dispatch) => {
   const payload = await createUser(username);
@@ -10,10 +10,10 @@ const newTracker = (bloodPressure, bloodGlucose, userId) => async (dispatch) => 
   dispatch({ type: 'measurement/newTracker', payload });
 };
 
-const loadData = () => async (dispatch) => {
-  const payload = await fetchTrackers();
-  dispatch({ type: 'allTrackers/loadData', payload });
-};
+// const loadData = () => async (dispatch) => {
+//   const payload = await fetchTrackers();
+//   dispatch({ type: 'allTrackers/loadData', payload });
+// };
 
 const selectAllTrackers = (state) => state.allTrackers;
 
@@ -23,5 +23,5 @@ const selectTrackers = (state) => {
 };
 
 export {
-  newUser, loadData, selectTrackers, newTracker,
+  newUser, selectTrackers, newTracker,
 };

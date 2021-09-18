@@ -22,6 +22,7 @@ class Home extends React.Component {
 
   render() {
     const { tracker } = this.state;
+
     return (
       <div className="home">
         <p>Add Metrics</p>
