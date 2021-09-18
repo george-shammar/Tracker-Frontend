@@ -3,7 +3,7 @@
 This is a simple health tracking application that provide users with the opportunity to measure and record their blood pressure and blood glucose metrics. Measured health paramaters are sent a back end API for storage and also made available retrieval.
 
 ## Live Demo
-[Deployed app]()
+[Deployed app](https://brave-shaw-64c6c4.netlify.app/)
 
 ## Built With
 - React
