@@ -40,6 +40,18 @@ npm start
 ```
 - The application will open up in your browser.
 
+## Usage
+
+Sidn in to the application using just your username. For the sake of this project, no user authentication was implemented.
+
+In the home page, all your previously recorded health parameters are fetched from the beck end and displyed. 
+
+To measure and record new data, navigate to:
+
+```Add metrics button
+```
+
+This displays a simple to record your blood pressure and blood glucose data. Once you hit the submit button, these data are sent to the back end for storage.
 ## Tests
 
 - To run the tests, in the command line interface, type 
