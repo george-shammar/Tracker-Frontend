@@ -5,8 +5,8 @@ const newUser = (username) => async (dispatch) => {
   dispatch({ type: 'signIn/newUser', payload });
 };
 
-const newTracker = (blood_pressure, blood_glucose, user_id) => async (dispatch) => {
-  const payload = await createTracker(blood_pressure, blood_glucose, user_id);
+const newTracker = (bloodPressure, bloodGlucose, userId) => async (dispatch) => {
+  const payload = await createTracker(bloodPressure, bloodGlucose, userId);
   dispatch({ type: 'measurement/newTracker', payload });
 };
 
