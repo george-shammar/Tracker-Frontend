@@ -32,7 +32,13 @@
             fetch.mockResponseOnce(JSON.stringify({ result: [track] }));
             const response = await fetchTrackers();
             expect(response).not.toBeNull();
-          });
+        });
+
+        it('should return a response with a blood_pressure/tracker property', async () => {
+            fetch.mockResponseOnce(JSON.stringify({ result: [track] }));
+            const response = await fetchTrackers();
+            expect(track.blood_pressure).toEqual(76);
+        });
 
     });
 
