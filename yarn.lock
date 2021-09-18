@@ -11701,7 +11701,7 @@
   dependencies:
     "css-tree" "^1.0.0"
 
-"stylelint-scss@^3.19.0":
+"stylelint-scss@^3.21.0":
   "integrity" "sha512-CMI2wSHL+XVlNExpauy/+DbUcB/oUZLARDtMIXkpV/5yd8nthzylYd1cdHeDMJVBXeYHldsnebUX6MoV5zPW4A=="
   "resolved" "https://registry.npmjs.org/stylelint-scss/-/stylelint-scss-3.21.0.tgz"
   "version" "3.21.0"
