@@ -4,7 +4,7 @@ import Header from './Header';
 import Nav from './Nav';
 import '../stylesheets/measurement.css';
 import { newTracker } from '../action/index';
-
+/* eslint-disable */
 const Measurement = () => {
   const [blood_pressure, setBloodPressure] = useState();
   const [blood_glucose, setBloodGlucose] = useState();
