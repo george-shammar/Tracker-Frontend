@@ -27,7 +27,7 @@ it('renders Tracker without crashing', () => {
 it('renders the Tracker component correctly', () => {
   const tree = renderer.create(
     <BrowserRouter>
-       <Tracker tracker={tracker} key={tracker.id} />
+      <Tracker tracker={tracker} key={tracker.id} />
     </BrowserRouter>,
   ).toJSON();
   expect(tree).toMatchSnapshot();
