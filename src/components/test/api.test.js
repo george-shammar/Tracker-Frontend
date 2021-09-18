@@ -40,6 +40,12 @@
             expect(track.blood_pressure).toEqual(76);
         });
 
+        it('should return a response with a blood_glucose/tracker property', async () => {
+            fetch.mockResponseOnce(JSON.stringify({ result: [track] }));
+            const response = await fetchTrackers();
+            expect(track.blood_glucose).toEqual(44);
+        });
+
         it('should NOT return a response with a wrong blood_pressure/tracker property', async () => {
             fetch.mockResponseOnce(JSON.stringify({ result: [track] }));
             const response = await fetchTrackers();
