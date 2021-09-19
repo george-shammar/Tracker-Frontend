@@ -28,6 +28,7 @@ class Home extends React.Component {
         <div className="holder">
           <div>
             <i className="fas add-new fa-plus-circle" />
+            <p className="new-track">New Measurement</p>
           </div>
           <div className="circle">
             <div className="bp-fig">
