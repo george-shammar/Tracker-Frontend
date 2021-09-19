@@ -44,3 +44,9 @@
 .percentage {
   margin: 0;
 }
+
+.bp-fig {
+  position: absolute;
+  left: 35px;
+  top: 100px;
+}

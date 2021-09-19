@@ -26,7 +26,7 @@ class Home extends React.Component {
     return (
       <div className="home">
         <div className="circle">
-          <div>
+          <div className="bp-fig">
             <p className="percentage">52</p>
             <p className="unit">mmHg</p>
           </div>
