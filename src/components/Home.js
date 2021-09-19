@@ -37,7 +37,7 @@ class Home extends React.Component {
             </div>
           </div>
           <div className="circle-bg">
-            <div className="bg-fig">
+            <div className="bp-fig">
               <p className="percentage">12</p>
               <p className="unit">mmol/L</p>
             </div>
