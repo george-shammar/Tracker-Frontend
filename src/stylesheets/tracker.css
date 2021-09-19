@@ -9,3 +9,20 @@
   height: 100px;
   margin: 10px;
 }
+
+.display {
+  display: flex;
+}
+
+.unit-two {
+  font-size: 0.5rem;
+  margin-top: 20px;
+  color: grey;
+  font-weight: bold;
+}
+
+.figure {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: grey;
+}
