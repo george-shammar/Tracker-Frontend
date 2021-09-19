@@ -26,23 +26,23 @@ class Home extends React.Component {
     return (
       <div className="home">
         <div className="holder">
-        <div>
-          <i className="fas fa-plus-circle" />
-        </div>
-        <div className="circle">
-          <div className="bp-fig">
-            <p className="percentage">52</p>
-            <p className="unit">mmHg</p>
+          <div>
+            <i className="fas add-new fa-plus-circle" />
+          </div>
+          <div className="circle">
+            <div className="bp-fig">
+              <p className="percentage">120</p>
+              <p className="unit">mmHg</p>
+            </div>
+          </div>
+          <div className="circle">
+            <div className="bg-fig">
+              <p className="percentage">12</p>
+              <p className="unit">mmol/L</p>
+            </div>
           </div>
         </div>
-        <div className="circle">
-          <div className="bp-fig">
-            <p className="percentage">52</p>
-            <p className="unit">mmHg</p>
-          </div>
-        </div>
-        </div>
-        
+
         <p>Add Metrics</p>
         <div className="add-metrics">
           <div className="heart">
