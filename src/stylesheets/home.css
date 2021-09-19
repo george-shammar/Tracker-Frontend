@@ -54,3 +54,8 @@
 .holder {
   display: flex;
 }
+
+.add-new {
+  color: #56baed;
+  font-size: 420%;
+}
