@@ -29,17 +29,23 @@ class Home extends React.Component {
               <p className="new-track">New Measurement</p>
             </Link>
           </div>
-          <div className="circle">
-            <div className="bp-fig">
-              <p className="percentage">120</p>
-              <p className="unit">mmHg</p>
+          <div>
+            <div className="circle">
+              <div className="bp-fig">
+                <p className="percentage">120</p>
+                <p className="unit">mmHg</p>
+              </div>
             </div>
+            <p className="text">BP</p>
           </div>
-          <div className="circle-bg">
-            <div className="bp-fig">
-              <p className="percentage">12</p>
-              <p className="unit">mmol/L</p>
+          <div>
+            <div className="circle-bg">
+              <div className="bp-fig">
+                <p className="percentage">12</p>
+                <p className="unit">mmol/L</p>
+              </div>
             </div>
+            <p className="text">BG</p>
           </div>
         </div>
 
