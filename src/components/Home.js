@@ -25,13 +25,24 @@ class Home extends React.Component {
 
     return (
       <div className="home">
+        <div className="holder">
+        <div>
+          <i className="fas fa-plus-circle" />
+        </div>
         <div className="circle">
           <div className="bp-fig">
             <p className="percentage">52</p>
             <p className="unit">mmHg</p>
           </div>
         </div>
-        <p className="completedText">Blood Pressure</p>
+        <div className="circle">
+          <div className="bp-fig">
+            <p className="percentage">52</p>
+            <p className="unit">mmHg</p>
+          </div>
+        </div>
+        </div>
+        
         <p>Add Metrics</p>
         <div className="add-metrics">
           <div className="heart">

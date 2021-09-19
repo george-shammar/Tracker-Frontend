@@ -50,3 +50,7 @@
   left: 35px;
   top: 100px;
 }
+
+.holder {
+  display: flex;
+}
