@@ -10,11 +10,6 @@ const newTracker = (bloodPressure, bloodGlucose, userId) => async (dispatch) => 
   dispatch({ type: 'measurement/newTracker', payload });
 };
 
-// const loadData = () => async (dispatch) => {
-//   const payload = await fetchTrackers();
-//   dispatch({ type: 'allTrackers/loadData', payload });
-// };
-
 const selectAllTrackers = (state) => state.allTrackers;
 
 const selectTrackers = (state) => {

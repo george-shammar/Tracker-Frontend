@@ -73,3 +73,8 @@
 .new-track {
   font-size: 0.8rem;
 }
+
+.record {
+  text-align: center;
+  color: grey;
+}

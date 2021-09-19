@@ -32,6 +32,7 @@ const Measurement = () => {
     setTracker({});
     e.preventDefault();
     history.push('/App');
+    console.log(bgg, bpp, user_id);
   };
 
   return (

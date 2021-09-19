@@ -1,13 +1,13 @@
 import 'regenerator-runtime/runtime';
 import axios from 'axios';
-
-const createTracker = async (bloodPressure, bloodGlucose, userId) => {
+/* eslint-disable */
+const createTracker = async (blood_pressure, blood_glucose, user_id) => {
   const response = await axios.post(
     'https://fierce-garden-46227.herokuapp.com/api/trackers/',
     {
-      bloodPressure,
-      bloodGlucose,
-      userId,
+      blood_pressure,
+      blood_glucose,
+      user_id,
     },
     {
       headers: {
@@ -16,6 +16,7 @@ const createTracker = async (bloodPressure, bloodGlucose, userId) => {
       },
     },
   );
+  console.log('called');
   return response;
 };
 
