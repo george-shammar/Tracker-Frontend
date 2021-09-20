@@ -1,6 +1,6 @@
 # Health Tracker
 
-This is a simple health tracking application that provide users with the opportunity to measure and record their blood pressure and blood glucose metrics. Measured health paramaters are sent a back end API for storage and also made available retrieval.
+This is a simple health tracking application that provide users with the opportunity to measure and record their blood pressure and blood glucose metrics. Measured health paramaters are sent to a back end API for storage and also made available for retrieval.
 
 - Home
 
