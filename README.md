@@ -4,7 +4,7 @@ This is a simple health tracking application that provide users with the opportu
 
 - Home
 
-![screenShot](./Home.png)
+![screenShot](./Home1.png)
 
 - Measurement 
 
