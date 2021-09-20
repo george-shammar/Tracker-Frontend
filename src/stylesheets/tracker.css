@@ -16,7 +16,7 @@
 
 .unit-two {
   font-size: 0.5rem;
-  margin-top: 20px;
+  margin-top: 30px;
   color: grey;
   font-weight: bold;
 }
@@ -24,5 +24,11 @@
 .figure {
   font-size: 1.2rem;
   font-weight: bolder;
+  color: grey;
+}
+
+.text-unit {
+  font-size: 0.7rem;
+  font-weight: bold;
   color: grey;
 }
