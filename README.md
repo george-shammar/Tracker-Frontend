@@ -3,12 +3,15 @@
 This is a simple health tracking application that provide users with the opportunity to measure and record their blood pressure and blood glucose metrics. Measured health paramaters are sent a back end API for storage and also made available retrieval.
 
 - Home
+
 ![screenShot](./Home.png)
 
 - Measurement 
+
 ![screenShot](./measurement.png)
 
 - Login
+
 ![screenShot](./login.png)
 
 ## Live Demo
