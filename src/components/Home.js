@@ -64,7 +64,6 @@ class Home extends React.Component {
           ) : (
             <p> Loading data...</p>
           )}
-          ;
         </div>
       </div>
     );
