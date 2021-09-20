@@ -6,7 +6,7 @@
 .card {
   width: 48.5%;
   background-color: white;
-  height: 100px;
+  height: 80px;
   margin: 10px;
 }
 
@@ -18,19 +18,20 @@
   font-size: 0.5rem;
   color: grey;
   font-weight: bold;
+  margin-top: 10px;
 }
 
 .figure {
   font-size: 1.2rem;
   font-weight: bolder;
   color: grey;
-  margin: 0;
+  margin-top: 0;
 }
 
 .text-unit {
   font-size: 0.7rem;
   font-weight: bold;
   color: grey;
-  margin: 0;
+  margin-top: 25px;
   padding: 0;
 }
