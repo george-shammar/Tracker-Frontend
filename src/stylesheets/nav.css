@@ -1,0 +1,36 @@
+.footer-nav {
+  display: flex;
+  width: 100%;
+  background-color: rgb(88, 86, 86);
+}
+
+.white {
+  color: white;
+}
+
+.font {
+  font-size: 0.8rem;
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+.foot {
+  cursor: pointer;
+  width: 33%;
+  text-align: center;
+}
+
+.foot:hover {
+  background-color: #56baed;
+}
+
+.left {
+  padding-left: 2%;
+}
+
+.right {
+  padding-right: 2%;
+}

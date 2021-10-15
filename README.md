@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+# Health Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple health tracking application that provide users with the opportunity to measure and record their blood pressure and blood glucose metrics. Measured health paramaters are sent to a back end API for storage and also made available for retrieval.
 
-## Available Scripts
+- Home
 
-In the project directory, you can run:
+![screenShot](./Home1.png)
 
-### `yarn start`
+- Measurement 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![screenShot](./measurement.png)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Login
 
-### `yarn test`
+![screenShot](./login.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Live Demo
+[Deployed app](https://brave-shaw-64c6c4.netlify.app/)
 
-### `yarn build`
+## Built With
+- React
+- JavaScript
+- HTML
+- CSS
+- Redux
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To run a local copy of this application, follow the steps below:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Go to the "Code" section of this repository and press the green button that says "Code". Copy the URL or the SSH key.
+- Go to the terminal and enter:
+```
+git clone URL/SSH key
+```
 
-### `yarn eject`
+The URL or SSH are the links copied from the step above.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- If you don't have git installed, you can download this project and unzip it.
+- Change directory into the folder the application is saved.
+```
+cd directory
+```
+Directory is the name of your folder.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Once you have the local copy in your desired folder, go back to your terminal and run:
+```
+npm install
+```
+This command installs all the dependencies of the application. Once you complete all installations successfully, you're ready to use the application.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- To start using the application, run:
+```
+npm start
+```
+- The application will open up in your browser.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Usage
 
-## Learn More
+Sidn in to the application using just your username. For the sake of this project, no user authentication was implemented.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+In the home page, all your previously recorded health parameters are fetched from the beck end and displyed. 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To measure and record new data, navigate to:
 
-### Code Splitting
+```Add metrics button
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This displays a simple to record your blood pressure and blood glucose data. Once you hit the submit button, these data are sent to the back end for storage.
 
-### Analyzing the Bundle Size
+## Tests
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- To run the tests, in the command line interface, type 
+```
+npm test
+```
 
-### Making a Progressive Web App
+## Developer
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+👤 **George Gbenle**
 
-### Advanced Configuration
+- GitHub: [george-shammar](https://github.com/george-shammar)
+- Twitter: [@GeorgeShammar](https://twitter.com/GeorgeShammar)
+- LinkedIn: [George Gbenle](https://www.linkedin.com/in/georgegbenle/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🤝 Contributing
 
-### Deployment
+Contributions, issues and feature requests are welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Show your support
 
-### `yarn build` fails to minify
+Give a ⭐️ if you like this project!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📝 License
+
+This project is [MIT](LICENSE) licensed.

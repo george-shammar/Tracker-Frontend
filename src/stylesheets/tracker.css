@@ -1,0 +1,46 @@
+.tracker {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  width: 48.5%;
+  background-color: white;
+  height: 80px;
+  margin: 10px;
+}
+
+.display {
+  display: flex;
+}
+
+.unit-two {
+  font-size: 0.5rem;
+  color: grey;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.figure {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: grey;
+  margin-top: 0;
+}
+
+.text-unit {
+  font-size: 0.5rem;
+  font-weight: bold;
+  color: grey;
+  margin-top: 25px;
+  padding: 0;
+}
+
+.heart {
+  font-size: 3rem;
+  margin-left: 10px;
+  padding: 0;
+  margin-top: 25px;
+  color: #56baed;
+}
